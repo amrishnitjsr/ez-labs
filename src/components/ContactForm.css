@@ -1,0 +1,376 @@
+/* Contact Form Section */
+.contact-form-section {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 1080px;
+  margin: 0 auto;
+  padding: 80px 120px;
+  background-color: #F5E6D3;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Texture - Match HeroSection */
+.contact-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+}
+
+.contact-texture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Decorative Mandala */
+.mandala-decoration {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.mandala-top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Centered Form Layout */
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 700px;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Form Header */
+.contact-form-wrapper::before {
+  content: 'Join the Story';
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2C3E50;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.contact-form-wrapper::after {
+  content: 'Ready to bring your vision to life? Let\'s talk.';
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4A4A4A;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C3E50;
+  letter-spacing: 0.5px;
+}
+
+.required {
+  color: #D84315;
+}
+
+.form-input,
+.form-textarea {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #2C3E50;
+  background-color: #FFFFFF;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #D84315;
+  box-shadow: 0 0 0 3px rgba(216, 67, 21, 0.1);
+}
+
+.form-input.error,
+.form-textarea.error {
+  border-color: #D32F2F;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #9E9E9E;
+}
+
+.form-input:disabled,
+.form-textarea:disabled {
+  background-color: #F5F5F5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.error-message {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #D32F2F;
+  letter-spacing: 0.3px;
+  margin-top: -4px;
+}
+
+/* Submit Status */
+.submit-status {
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.submit-status.success {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  border: 1px solid #81C784;
+}
+
+.submit-status.error {
+  background-color: #FFEBEE;
+  color: #C62828;
+  border: 1px solid #EF5350;
+}
+
+/* Submit Button */
+.submit-btn {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #D84315;
+  border: none;
+  padding: 16px 60px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(216, 67, 21, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 8px auto 0;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #BF360C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(216, 67, 21, 0.4);
+}
+
+.submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit-btn:disabled {
+  background-color: #BDBDBD;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Spinner */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bottom Contact Info */
+.contact-info-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 2px solid rgba(44, 62, 80, 0.1);
+}
+
+.contact-info-bottom a {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #D84315;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.contact-info-bottom a:hover {
+  color: #BF360C;
+  text-decoration: underline;
+}
+
+.contact-divider {
+  color: #D84315;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .contact-form-section {
+    padding: 60px 80px;
+  }
+
+  .mandala-top-right {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 968px) {
+  .contact-form-section {
+    padding: 50px 40px;
+  }
+
+  .contact-form-container {
+    max-width: 600px;
+  }
+
+  .contact-form-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 40px 30px;
+    min-height: 600px;
+  }
+
+  .contact-form-wrapper::before {
+    font-size: 36px;
+  }
+
+  .contact-form-wrapper::after {
+    font-size: 16px;
+  }
+
+  .mandala-decoration {
+    display: none;
+  }
+
+  .contact-info-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-section {
+    padding: 40px 20px;
+  }
+
+  .contact-form-wrapper::before {
+    font-size: 28px;
+  }
+
+  .contact-form-wrapper::after {
+    font-size: 15px;
+  }
+
+  .contact-form-wrapper {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .contact-detail-text h4 {
+    font-size: 13px;
+  }
+
+  .contact-detail-text p {
+    font-size: 15px;
+  }
+}

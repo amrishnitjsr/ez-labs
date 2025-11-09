@@ -1,0 +1,331 @@
+/* About Team Section */
+.about-team {
+  width: 100%;
+  max-width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  padding: 80px 120px;
+  background-color: #F5E6D3;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Background Texture - Match HeroSection */
+.about-team-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+}
+
+.about-team-texture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-team-container {
+  width: 100%;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Side */
+.about-team-left {
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.building-icon {
+  width: 180px;
+  margin: 0 auto;
+}
+
+/* Sticky Note */
+.sticky-note {
+  background: linear-gradient(135deg, #FFF9C4 0%, #FFF59D 100%);
+  padding: 32px 28px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: rotate(-2deg);
+  position: relative;
+}
+
+.sticky-note::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 30px 0;
+  border-color: transparent #E6D97A transparent transparent;
+}
+
+.sticky-note-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #2C3E50;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Branding Badge */
+.branding-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #2C3E50;
+  padding: 12px 20px;
+  border-radius: 30px;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3);
+}
+
+.badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-number {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  min-width: 24px;
+  text-align: center;
+}
+
+.badge-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Right Side */
+.about-team-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.team-silhouettes {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+}
+
+/* Team Labels */
+.team-label {
+  position: absolute;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  color: #2C3E50;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.film-makers {
+  top: 80px;
+  right: 20px;
+}
+
+.art-curators {
+  bottom: 80px;
+  right: 50px;
+}
+
+/* Team Badge Group */
+.team-badge-group {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.team-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2C3E50;
+  padding: 8px 16px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3);
+}
+
+.badge-icon-small {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-number-small {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-left: 4px;
+}
+
+/* Team CTA */
+.team-cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-cta-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #2C3E50;
+  margin: 0;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+.view-portfolio-btn {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #D84315;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(216, 67, 21, 0.3);
+}
+
+.view-portfolio-btn:hover {
+  background-color: #BF360C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(216, 67, 21, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-team {
+    padding: 60px 80px;
+  }
+
+  .about-team-container {
+    gap: 60px;
+  }
+
+  .about-team-left {
+    flex: 0 0 350px;
+  }
+}
+
+@media (max-width: 968px) {
+  .about-team {
+    padding: 50px 40px;
+  }
+
+  .about-team-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-team-left {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .about-team-right {
+    width: 100%;
+  }
+
+  .team-silhouettes {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-team {
+    padding: 40px 30px;
+  }
+
+  .sticky-note-text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .team-silhouettes {
+    height: 300px;
+  }
+
+  .team-label {
+    font-size: 16px;
+  }
+
+  .team-cta-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-team {
+    padding: 40px 20px;
+  }
+
+  .about-team-left {
+    gap: 30px;
+  }
+
+  .building-icon {
+    width: 140px;
+  }
+
+  .sticky-note {
+    padding: 24px 20px;
+  }
+
+  .sticky-note-text {
+    font-size: 12px;
+  }
+
+  .team-silhouettes {
+    height: 250px;
+  }
+
+  .team-cta-text {
+    font-size: 16px;
+  }
+
+  .view-portfolio-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
