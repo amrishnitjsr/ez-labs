@@ -40,6 +40,21 @@ const AboutPage = () => {
           Together, we've crafted tales that inspire, connect, and endure.
         </p>
       </div>
+
+      {/* Montage Text */}
+      <div className="montage-text-container">
+        <p className="montage-text">
+          A montage of familiar faces and names.
+        </p>
+      </div>
+
+      {/* Stories Description */}
+      <div className="stories-description-container">
+        <p className="stories-description-text">
+          Some stories come from the biggest names. Others begin with bold, rising voices.
+          We've been fortunate to walk alongside both - listening, creating, and building stories that matter.
+        </p>
+      </div>
     </div>
   );
 };

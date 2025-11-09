@@ -100,7 +100,7 @@
 /* Sun Image */
 .sun-image-container {
   position: absolute;
-  top: 758px;
+  top: 658px;
   left: 1050px;
   width: 596.8663330078125px;
   height: 361.7059326171875px;
@@ -118,10 +118,10 @@
 /* Quote Text */
 .quote-container {
   position: absolute;
-  top: 151px;
+  top: 100px;
   left: 700px;
-  width: 918px;
-  height: 368px;
+  width: 800px;
+  height: 280px;
   z-index: 3;
   display: flex;
   align-items: center;
@@ -130,11 +130,68 @@
 
 .quote-text {
   font-family: 'Island Moments', cursive;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 400;
   font-style: normal;
   color: #0F3255;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 1;
+  transform: rotate(0deg);
+  margin: 0;
+}
+
+/* Montage Text */
+.montage-text-container {
+  position: absolute;
+  top: 290px;
+  left: 80px;
+  width: 662px;
+  height: 63px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.montage-text {
+  font-family: 'Halant', serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2C3E50;
   line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 1;
+  transform: rotate(0deg);
+  margin: 0;
+}
+
+/* Stories Description */
+.stories-description-container {
+  position: absolute;
+  top: 393px;
+  left: 203px;
+  width: 551px;
+  height: 145px;
+  z-index: 3;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.stories-description-text {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #252729;
+  line-height: 130%;
   letter-spacing: 0%;
   text-align: center;
   opacity: 1;
