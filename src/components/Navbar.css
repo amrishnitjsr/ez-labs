@@ -10,7 +10,7 @@
   box-shadow: 0 2px 10px rgba(44, 62, 80, 0.08);
   padding: 0.75rem 0;
   height: 70px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Background Texture for Navbar */
@@ -84,13 +84,15 @@
 .navbar-logo-right {
   display: flex;
   align-items: center;
+  margin-right: -20px;
 }
 
 .logo-right-image {
-  height: 50px;
+  height: 60px;
   width: auto;
   display: block;
   object-fit: contain;
+  max-width: none;
 }
 
 .navbar-menu {

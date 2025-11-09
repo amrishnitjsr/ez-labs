@@ -16,7 +16,15 @@ html {
   overflow-x: hidden;
 }
 
-/* Ensure sections stack properly */
+/* Ensure sections stack properly with no gaps */
 .App > * {
   flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.App > section {
+  margin: 0;
+  padding: 0;
+  display: block;
 }
